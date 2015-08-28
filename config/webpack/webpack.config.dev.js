@@ -1,7 +1,6 @@
 /**
  * Webpack dev configuration
  */
-/*globals __dirname:false */
 var path = require("path");
 var webpack = require("webpack");
 var base = require("./webpack.config");
