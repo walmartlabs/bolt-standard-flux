@@ -30,8 +30,9 @@ module.exports = {
   },
   stylus: base.stylus,
   resolve: base.resolve,
+  resolveLoader: base.resolveLoader,
   devtool: "eval-source-map",
   plugins: base.plugins.push(
-    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.DedupePlugin()
   )
 };
