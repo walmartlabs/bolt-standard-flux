@@ -1,6 +1,6 @@
 {
   "name": "bolt-standard-flux",
-  "version": "0.2.16",
+  "version": "0.2.17",
   "description": "Opinionated meta config runner for react components",
   "scripts": {
     "lint-node": "eslint -c node_modules/electrode-bolt/config/eslint/.eslintrc-node server --color",
@@ -52,9 +52,6 @@
     "webpack": "^1.12.0",
     "webpack-dev-server": "^1.10.1",
     "webpack-stats-plugin": "^0.1.0",
-    "autoprefixer-stylus": "^0.7.1",
-    "clean-webpack-plugin": "^0.1.3",
-    "extract-text-webpack-plugin": "^0.8.2",
-    "webpack-stats-plugin": "^0.1.0"
+    "autoprefixer-stylus": "^0.7.1"
   }
 }
