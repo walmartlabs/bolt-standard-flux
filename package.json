@@ -1,6 +1,6 @@
 {
   "name": "bolt-standard-flux",
-  "version": "0.2.13",
+  "version": "0.2.14",
   "description": "Opinionated meta config runner for react components",
   "scripts": {
     "lint-node": "eslint -c node_modules/electrode-bolt/config/eslint/.eslintrc-node server --color",
