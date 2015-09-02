@@ -31,6 +31,7 @@ module.exports = {
   stylus: base.stylus,
   resolve: base.resolve,
   devtool: "eval-source-map",
-  plugins: base.plugins
+  plugins: base.plugins.push(
     new webpack.optimize.DedupePlugin(),
+  )
 };
