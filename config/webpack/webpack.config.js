@@ -57,7 +57,7 @@ module.exports = {
       "\n//# sourceMappingURL=http://127.0.0.1:3001/dist/map/[url]"
     ),
     new StatsWriterPlugin({
-      path: path.join(__dirname, "dist/server"),
+      path: path.join(process.cwd(), "dist/server"),
       filename: "stats.json"
     })
   ]
