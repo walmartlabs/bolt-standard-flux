@@ -1,7 +1,6 @@
 /**
  * Webpack hot configuration
  */
-/*globals __dirname:false */
 var path = require("path");
 var base = require("./webpack.config.dev");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -18,7 +17,7 @@ module.exports = {
   module: {
     // Copy this because of `react-hot` injection.
     loaders: [
-      { test: /\.js(x|)?$/, include: path.join(__dirname, "client"),
+      { test: /\.js(x|)?$/, include: path.join(process.cwd(), "client"),
         loaders: ["react-hot", "babel-loader"] },
       { test: /\.styl$/,
         loader: ExtractTextPlugin.extract(
@@ -33,4 +32,5 @@ module.exports = {
   resolve: base.resolve,
   devtool: "eval-source-map",
   plugins: base.plugins
+    new webpack.optimize.DedupePlugin(),
 };
