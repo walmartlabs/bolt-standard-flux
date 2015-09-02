@@ -20,8 +20,8 @@ module.exports = {
   resolve: base.resolve,
   resolveLoader:  base.resolveLoader,
   devtool: "eval-source-map",
-  plugins: [
+  plugins: base.plugins.concat([
     new ExtractTextPlugin("style.css"),
     new webpack.NoErrorsPlugin()
-  ]
+  ])
 };
