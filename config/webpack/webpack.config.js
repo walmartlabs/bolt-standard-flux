@@ -48,3 +48,5 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin(),
 
     // Meta, debug info.
+  ]
+};

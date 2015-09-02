@@ -15,7 +15,7 @@
     "prod": "bolt watch & bolt server & bolt sources",
     "dev": "bolt server-dev & WEBPACK_DEV=true bolt server",
     "hot": "bolt server-hot & WEBPACK_DEV=true bolt server",
-    "build": "webpack --config config/webpack/webpack.config.js"
+    "build": "webpack --config node_modules/bolt-standard-flux/config/webpack/webpack.config.js"
   },
   "repository": {
     "type": "git",

@@ -12,12 +12,13 @@ module.exports = {
   entry: base.entry,
   output: {
     path: path.join(__dirname, "dist/js"),
-    filename: "bundle.js",
+    filename: "bundle.dev.js",
     publicPath: "http://127.0.0.1:2992/js"
   },
   module: base.module,
   stylus: base.stylus,
   resolve: base.resolve,
+  resolveLoader:  base.resolveLoader,
   devtool: "eval-source-map",
   plugins: [
     new ExtractTextPlugin("style.css"),
