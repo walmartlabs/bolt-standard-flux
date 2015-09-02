@@ -5,7 +5,6 @@ var boltNodeModules = path.join(__dirname, "../../../electrode-bolt", "node_modu
 var CleanPlugin = require("clean-webpack-plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var StatsWriterPlugin = require("webpack-stats-plugin").StatsWriterPlugin;
-var StatsWriterPlugin = require("webpack-stats-plugin").StatsWriterPlugin;
 var autoprefixer = require("autoprefixer-stylus");
 
 module.exports = {
