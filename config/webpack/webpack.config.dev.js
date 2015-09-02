@@ -6,7 +6,6 @@ var webpack = require("webpack");
 var base = require("./webpack.config");
 var CleanPlugin = require("clean-webpack-plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var StatsWriterPlugin = require("webpack-stats-plugin").StatsWriterPlugin;
 var autoprefixer = require("autoprefixer-stylus");
 
 module.exports = {
@@ -14,7 +13,7 @@ module.exports = {
   context: base.context,
   entry: base.entry,
   output: {
-    path: path.join(__dirname, "dist/js"),
+    path: path.join(process.cwd(), "dist/js"),
     filename: "bundle.dev.js",
     publicPath: "http://127.0.0.1:2992/js"
   },
@@ -23,8 +22,8 @@ module.exports = {
   resolve: base.resolve,
   resolveLoader:  base.resolveLoader,
   devtool: "eval-source-map",
-  plugins: base.plugins.concat([
+  plugins: [
     new ExtractTextPlugin("style.css"),
     new webpack.NoErrorsPlugin()
-  ])
+  ]
 };

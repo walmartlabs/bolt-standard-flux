@@ -6,7 +6,6 @@ var base = require("./webpack.config.dev");
 var webpack = require("webpack");
 var CleanPlugin = require("clean-webpack-plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var StatsWriterPlugin = require("webpack-stats-plugin").StatsWriterPlugin;
 var autoprefixer = require("autoprefixer-stylus");
 
 module.exports = {
