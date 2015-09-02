@@ -36,7 +36,5 @@ module.exports = {
   resolve: base.resolve,
   resolveLoader: base.resolveLoader,
   devtool: "eval-source-map",
-  plugins: base.plugins.push(
-    new webpack.optimize.DedupePlugin()
-  )
+  plugins: base.plugins
 };
