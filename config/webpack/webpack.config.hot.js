@@ -3,6 +3,7 @@
  */
 var path = require("path");
 var base = require("./webpack.config.dev");
+var webpack = require("webpack");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
