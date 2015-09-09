@@ -2,7 +2,7 @@
 
 An electrode standard configuration and task for building application.
 
-Meant to be used with `electrode-bolt` ([on walmartreact github[(https://github.com/walmartreact/electrode-bolt)).
+Meant to be used with `electrode-bolt` [WalmartReact/electrode-bolt](https://github.com/walmartreact/electrode-bolt)
 
 ## Usage
 
