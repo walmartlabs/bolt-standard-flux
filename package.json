@@ -7,7 +7,7 @@
     "lint-client-test": "eslint --ext .js,.jsx -c node_modules/electrode-bolt/config/eslint/.eslintrc-react-test test/client",
     "lint-server": "eslint -c node_modules/electrode-bolt/config/eslint/.eslintrc-node server",
     "lint-server-test": "eslint -c node_modules/electrode-bolt/config/eslint/.eslintrc-node test/server test/func",
-    "lint": "npm run lint-client && npm run lint-client-test && npm run lint-server && npm run lint-server-test",
+    "lint": "bolt lint-client && bolt lint-client-test && bolt lint-server && bolt lint-server-test",
     "start": "node server/index.js",
     "server": "nodemon --watch client --watch server --ext js,jsx server/index.js",
     "server-dev": "webpack-dev-server --config node_modules/bolt-standard-flux/config/webpack/webpack.config.dev.js --progress --colors --port 2992",
