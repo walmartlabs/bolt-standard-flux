@@ -1,6 +1,6 @@
 {
   "name": "bolt-standard-flux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Opinionated meta config runner for react components",
   "scripts": {
     "lint-client": "eslint --ext .js,.jsx -c .eslintrc-client client templates",
