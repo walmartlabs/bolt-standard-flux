@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/walmartreact/bolt-standard-flux#readme",
   "dependencies": {
-    "autoprefixer-stylus": "^0.7.1",
+    "autoprefixer-stylus": "^0.14.0",
     "babel": "^5.8.21",
     "babel-core": "^5.8.22",
     "babel-eslint": "^4.0.10",
